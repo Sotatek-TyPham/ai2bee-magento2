@@ -21,14 +21,6 @@ services:
   phpfpm:
     volumes: *appvolumes
 
-  phpmyadmin:
-    image: linuxserver/phpmyadmin
-    env_file: env/db.env
-    ports:
-      - "8080:80"
-    depends_on:
-      - db
-
   ## Selenium support, uncomment to enable
   #selenium:
   #  image: selenium/standalone-chrome-debug:3.8.1
