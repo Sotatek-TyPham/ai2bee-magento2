@@ -65,7 +65,7 @@ services:
   redis:
     image: valkey/valkey:8.1-alpine
     ports:
-      - "6379:6379"
+      - "6111:6379"
 
   ## If you wish to use Redis, comment out the redis image above and
   ## uncomment this block.
